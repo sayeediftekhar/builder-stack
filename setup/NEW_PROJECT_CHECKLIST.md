@@ -29,9 +29,13 @@ done. Commands are copy-pasteable as written.
   ```
 
 - [ ] **Run the architecture session**
-  Open an architect chat (Claude.ai), load
-  `docs/SYSTEMS_THINKING_FRAMEWORK.md`, and answer the seven-rung questions
-  for this project.
+  Open an architect chat (Claude.ai), load `docs/SYSTEMS_THINKING_FRAMEWORK.md`,
+  and paste this prompt:
+  > I am starting a new project called {{PROJECT_NAME}}. It is
+  > {{ONE_LINE_DESCRIPTION}}. Read docs/SYSTEMS_THINKING_FRAMEWORK.md and run me
+  > through each of the seven rungs as they apply to this specific project. For
+  > each rung, ask me the decisions I need to make and record my answers. The
+  > output should be a filled docs/ARCHITECTURE.md I can commit.
 
 - [ ] **Create `docs/ARCHITECTURE.md`** from `templates/ARCHITECTURE.md` using
   the architect output.
