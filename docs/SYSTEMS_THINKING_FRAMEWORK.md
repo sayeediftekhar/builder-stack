@@ -99,8 +99,9 @@ accumulates silently until changing anything risks breaking everything.
   copy-paste" — one source of truth).
 - **Danger signal (change radius):** one change forces edits in three-plus
   other pieces.
-- **Agentic consequence:** low coupling keeps each task isolated at 100
-  features as it was at 10 — cost and accuracy stay constant as you grow.
+- **Agentic aim:** low coupling keeps each task isolated at 100 features as
+  it was at 10 — the aim is to keep cost and accuracy roughly constant as you
+  grow.
 - **Enforcing habit:** one task = one PR = one context boundary; treat a wide
   change radius as a coupling alarm.
 
