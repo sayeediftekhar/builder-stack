@@ -9,7 +9,7 @@ This is a reference library — read the file you need, don't preload everything
 | Project CLAUDE.md template | templates/CLAUDE.md |
 | Iron Laws template | templates/LAWS.md |
 | Architecture doc template | templates/ARCHITECTURE.md |
-| Living-state template | templates/CONTEXT_CORE.md |
+| Living-state template | templates/CONTEXT.md |
 | Project docs-index template | templates/docs_INDEX.md |
 | Lessons-learned template | templates/LEARNINGS.md |
 | New-project install checklist | setup/NEW_PROJECT_CHECKLIST.md |

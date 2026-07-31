@@ -10,7 +10,7 @@ task needs it.
 | Domain rules, business logic | {{DOMAIN_DOC_PATH}} |
 | Database schema | {{SCHEMA_PATH}} |
 | Iron Laws (commit-blocking) | LAWS.md |
-| Living state / current phase | context/core.md |
+| Living state / current phase | CONTEXT.md |
 | Lessons learned | LEARNINGS.md |
 | {{ADDED_TOPIC}} | {{ADDED_FILE_PATH}} |
 

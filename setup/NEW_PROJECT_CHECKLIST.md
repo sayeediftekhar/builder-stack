@@ -43,17 +43,19 @@ done. Commands are copy-pasteable as written.
 - [ ] **Create `LAWS.md`** from `templates/LAWS.md` — 4–8 project-specific
   invariants.
 
-- [ ] **Create `context/core.md`** from `templates/CONTEXT_CORE.md`.
+- [ ] **Create `CONTEXT.md`** from `templates/CONTEXT.md`.
 
 - [ ] **Create `docs/INDEX.md`** from `templates/docs_INDEX.md`.
 
 - [ ] **Create `LEARNINGS.md`** from `templates/LEARNINGS.md`.
 
-- [ ] **Finalise CLAUDE.md** — fill all placeholders, confirm ≤80 lines.
+- [ ] **Finalise CLAUDE.md** — fill all placeholders; keep it lean (aim under ~100 lines — if it grows,
+  move operating-model detail into docs/ fetched on demand, keeping only rules
+  + authorities index + routing).
 
 - [ ] **Start the first Claude Code session.** Verify:
   - Does it route through Keel?
-  - Does it read `context/core.md` on session start?
+  - Does it read `CONTEXT.md` on session start?
   - Does it stay out of `docs/` without being asked?
 
 - [ ] **Run Phase 0** (thin foundation) before any feature slices.

@@ -90,8 +90,8 @@ curl -O https://raw.githubusercontent.com/sayeediftekhar/lean-context/main/DIREC
 ```
 Then tell Claude Code: *"Read DIRECTIVE.md and execute it. Stop at each STOP
 for my approval."* It audits the repo and produces the three-tier structure:
-- **Tier 1** — lean `CLAUDE.md` (≤80 lines: rules + authorities index + Keel
-  routing line)
+- **Tier 1** — lean `CLAUDE.md` (aim under ~100 lines: rules + authorities index + Keel
+  routing line; if it grows, push operating-model prose to docs/)
 - **Tier 2** — Keel skills on the bookshelf (installed in Step 1)
 - **Tier 3** — `docs/` for deep reference, fetched on demand
 
@@ -111,7 +111,7 @@ the authorities index — fetched on demand, never standing.
 > code > prose docs); an **operating model** (route through keel-v2; one task
 = one PR = one context boundary; plan before code; verify in the real
 environment; load on demand); the **Iron Laws**; a **session start** line
-(read context/core.md, check git status, read the spec, do NOT preload
+(read CONTEXT.md, check git status, read the spec, do NOT preload
 docs/); the **authorities index** table; and a single `@docs/INDEX.md` eager
 import — a ~30-line pointer table, the only eager load. Everything else is
 fetched when a task needs it. Use `templates/CLAUDE.md`.
@@ -121,7 +121,7 @@ fetched when a task needs it. Use `templates/CLAUDE.md`.
 ## Managing an ongoing project
 
 **Each session** Claude Code reads `CLAUDE.md` (routing → Keel, Iron Laws,
-authorities index, the `@docs/INDEX.md` import), then reads `context/core.md`
+authorities index, the `@docs/INDEX.md` import), then reads `CONTEXT.md`
 as its first action. That is the entire standing load.
 
 **Each task** (1) keel-v2 scans danger surfaces and recommends a rigor level,
@@ -133,7 +133,7 @@ review → real-environment check → commit.
 **After each task** run the three feedback signals — *change radius* (touched
 more files than expected?), *explanation test* (still one sentence per
 module?), *surprise test* (anything break that shouldn't have?). File any hit
-as its own refactoring task. Update `context/core.md` and `LEARNINGS.md`
+as its own refactoring task. Update `CONTEXT.md` and `LEARNINGS.md`
 before ending.
 
 **Every 5–10 features** review `docs/ARCHITECTURE.md`: are boundaries holding?
@@ -165,7 +165,7 @@ for you, not a runtime instruction.
 | `SYSTEMS_THINKING_FRAMEWORK.md` | This repo | You (architect chat) | Project start, design decisions |
 | `docs/ARCHITECTURE.md` | Each project repo | Claude Code (on demand) | Architecture questions |
 | `LAWS.md` | Each project repo | Claude Code (always loaded) | Every session |
-| `context/core.md` | Each project repo | Claude Code (always loaded) | Every session |
+| `CONTEXT.md` | Each project repo | Claude Code (always loaded) | Every session |
 | `docs/INDEX.md` | Each project repo | Claude Code (always loaded, tiny) | Every session |
 
 ---

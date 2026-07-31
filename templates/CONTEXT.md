@@ -1,4 +1,4 @@
-# context/core.md — {{PROJECT_NAME}}
+# CONTEXT — {{PROJECT_NAME}}
 
 <!-- ALWAYS LOADED. Keep under 40 lines. Living state only — no reference
      material, no history. Claude Code reads this first, every session. -->
