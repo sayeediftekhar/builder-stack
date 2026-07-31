@@ -22,9 +22,9 @@ Every module, component, or folder should have one job, describable in one
 sentence. If the description needs "and also," a boundary is being violated.
 
 - **Danger signal:** you can't explain what a piece does in one sentence.
-- **Agentic cost of violation:** a piece doing three jobs needs 3× the
-  context to work on safely, 3× the risk of side effects, 3× the tokens.
-  Boundaries are cost control.
+- **Agentic cost of violation:** a piece doing three jobs takes roughly the
+  context, side-effect risk, and tokens of three — cost that scales with the
+  number of jobs, not one. Boundaries are cost control.
 - **Enforcing habit:** separate folders per concern (`/pricing`, `/bookings`,
   `/notifications`). Claude working in `/pricing` literally cannot see
   `/notifications` unless it goes there deliberately.
@@ -99,8 +99,9 @@ accumulates silently until changing anything risks breaking everything.
   copy-paste" — one source of truth).
 - **Danger signal (change radius):** one change forces edits in three-plus
   other pieces.
-- **Agentic consequence:** low coupling keeps each task isolated at 100
-  features as it was at 10 — cost and accuracy stay constant as you grow.
+- **Agentic aim:** low coupling keeps each task isolated at 100 features as
+  it was at 10 — the aim is to keep cost and accuracy roughly constant as you
+  grow.
 - **Enforcing habit:** one task = one PR = one context boundary; treat a wide
   change radius as a coupling alarm.
 
