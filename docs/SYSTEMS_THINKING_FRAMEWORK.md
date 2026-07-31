@@ -22,9 +22,9 @@ Every module, component, or folder should have one job, describable in one
 sentence. If the description needs "and also," a boundary is being violated.
 
 - **Danger signal:** you can't explain what a piece does in one sentence.
-- **Agentic cost of violation:** a piece doing three jobs needs 3× the
-  context to work on safely, 3× the risk of side effects, 3× the tokens.
-  Boundaries are cost control.
+- **Agentic cost of violation:** a piece doing three jobs takes roughly the
+  context, side-effect risk, and tokens of three — cost that scales with the
+  number of jobs, not one. Boundaries are cost control.
 - **Enforcing habit:** separate folders per concern (`/pricing`, `/bookings`,
   `/notifications`). Claude working in `/pricing` literally cannot see
   `/notifications` unless it goes there deliberately.
